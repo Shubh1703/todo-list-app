@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Web App</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero min-h-screen bg-gradient-to-r from-blue-500 to-purple-600">
+    <div class="hero-content text-center">
+      <div class="max-w-2xl">
+        <!-- Catchy Heading -->
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
+          Your Tasks, <span class="text-yellow-300">Simplified.</span>
+        </h1>
+
+        <!-- Catchy Subheading -->
+        <p class="text-lg md:text-xl text-white mb-8">
+          Say goodbye to chaos and hello to productivity. Organize your life, one task at a time, with our intuitive and powerful to-do list app.
+        </p>
+
+        <!-- Call-to-Action Button -->
+        <button class="btn btn-primary btn-lg bg-yellow-300 text-gray-800 hover:bg-yellow-400">
+          Get Started for Free
+        </button>
+
+        <!-- Optional: Add a small note below the button -->
+        <p class="text-sm text-white mt-4">
+          No credit card required. Join thousands of happy users today!
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <!-- Section Heading -->
+      <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12">
+        Why Choose Us?
+      </h2>
+
+      <!-- Features Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="card bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="card-body items-center text-center">
+            <div class="text-6xl text-blue-500 mb-4">📝</div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Effortless Task Management</h3>
+            <p class="text-gray-600">
+              Add, edit, and organize tasks with just a few clicks. Stay on top of your to-dos without breaking a sweat.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="card bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="card-body items-center text-center">
+            <div class="text-6xl text-purple-500 mb-4">⏰</div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Smart Reminders</h3>
+            <p class="text-gray-600">
+              Never miss a deadline again. Set reminders and get notified when it's time to take action.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="card bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="card-body items-center text-center">
+            <div class="text-6xl text-green-500 mb-4">🤝</div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Collaborate with Ease</h3>
+            <p class="text-gray-600">
+              Share tasks with friends, family, or teammates. Work together and get things done faster.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="card bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="card-body items-center text-center">
+            <div class="text-6xl text-yellow-500 mb-4">📱</div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Cross-Platform Sync</h3>
+            <p class="text-gray-600">
+              Access your tasks from anywhere, on any device. Your to-dos are always in sync.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="card bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="card-body items-center text-center">
+            <div class="text-6xl text-red-500 mb-4">🎨</div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Customizable Themes</h3>
+            <p class="text-gray-600">
+              Personalize your app with beautiful themes. Make it truly yours.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="card bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="card-body items-center text-center">
+            <div class="text-6xl text-pink-500 mb-4">📊</div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Progress Tracking</h3>
+            <p class="text-gray-600">
+              Visualize your progress with charts and stats. Stay motivated and crush your goals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials Section -->
+<section class="py-20 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <!-- Section Heading -->
+    <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12">
+      What Our Users Say
+    </h2>
+
+    <!-- Testimonials Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="card bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="card-body">
+          <p class="text-gray-600 italic mb-6">
+            "This app has completely transformed how I manage my tasks. It's simple, intuitive, and incredibly powerful. I can't imagine life without it!"
+          </p>
+          <div class="flex items-center">
+            <div class="avatar">
+              <img
+                src="https://res.cloudinary.com/drvzvqkmt/image/upload/v1741111430/bzohxl5fhahgkr59uos0.jpg"
+                alt="User"
+                class="w-12 h-12 rounded-full"
+              />
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg font-bold text-gray-800">John Smith</h4>
+              <p class="text-gray-600">Freelance Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="card bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="card-body">
+          <p class="text-gray-600 italic mb-6">
+            "I've tried so many to-do apps, but this one stands out. The collaboration features are a game-changer for my team. Highly recommend!"
+          </p>
+          <div class="flex items-center">
+            <div class="avatar">
+              <img
+                src="https://res.cloudinary.com/drvzvqkmt/image/upload/v1741111297/le37jzxpg9ptj6g6tvqm.jpg"
+                alt="User"
+                class="w-12 h-12 rounded-full"
+              />
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg font-bold text-gray-800">Emily Martinez</h4>
+              <p class="text-gray-600">Project Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="card bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="card-body">
+          <p class="text-gray-600 italic mb-6">
+            "The reminders and progress tracking features keep me on track like never before. It's like having a personal productivity coach!"
+          </p>
+          <div class="flex items-center">
+            <div class="avatar">
+              <img
+                src="https://res.cloudinary.com/drvzvqkmt/image/upload/v1741111430/ebpaikfgbbmyfte842ov.jpg"
+                alt="User"
+                class="w-12 h-12 rounded-full"
+              />
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg font-bold text-gray-800">Alex Rodriguez</h4>
+              <p class="text-gray-600">Entrepreneur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call-to-Action Section -->
+<section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+    <div class="container mx-auto px-4 text-center">
+      <!-- Section Heading -->
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+        Ready to Boost Your Productivity?
+      </h2>
+
+      <!-- Catchy Subheading -->
+      <p class="text-lg md:text-xl text-white mb-8">
+        Join thousands of users who are already organizing their lives with our powerful to-do list app. Start your journey today!
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col md:flex-row justify-center gap-4">
+        <!-- Primary CTA Button -->
+        <button class="btn btn-primary btn-lg bg-yellow-300 text-gray-800 hover:bg-yellow-400">
+          Get Started for Free
+        </button>
+
+        <!-- Secondary CTA Button -->
+        <button class="btn btn-outline btn-lg text-white border-white hover:bg-white hover:text-gray-800">
+          Learn More
+        </button>
+      </div>
+
+      <!-- Optional: Add a small note below the buttons -->
+      <p class="text-sm text-white mt-6">
+        No credit card required. Sign up in seconds!
+      </p>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="footer p-10 bg-gray-800 text-white">
+    <div class="container mx-auto px-4">
+      <!-- Grid Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- About Section -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">About Us</h3>
+          <p class="text-gray-400">
+            We’re on a mission to help you stay organized, focused, and productive. Our to-do list app is designed to simplify your life, one task at a time, so you can spend less time managing your tasks and more time achieving your goals. Whether you're tackling daily chores, work projects, or personal goals, we’re here to make productivity effortless and enjoyable.
+          </p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="text-gray-400">
+            <li class="mb-2"><a href="#" class="hover:text-white">Home</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-white">Features</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-white">Testimonials</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+          <ul class="text-gray-400">
+            <li class="mb-2">Email: <a href="mailto:support@todolistapp.com" class="hover:text-white">shubhamkumar170320@gmail.com</a></li>
+            <li class="mb-2">Phone: <a href="tel:+916205073345" class="hover:text-white">+91 6205073345</a></li>
+            <li class="mb-2">Address: Greater Noida, Uttar Pradesh</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="mt-10 text-center">
+        <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+        <div class="flex justify-center gap-6">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-facebook text-2xl"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-twitter text-2xl"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-linkedin text-2xl"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-instagram text-2xl"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Credits Section -->
+      <div class="mt-10 text-center text-gray-400">
+        <p>
+          &copy; 2025 To-Do List App. All rights reserved. | Designed with ❤️ by 
+          <a href="https://www.linkedin.com/in/shubhamkumar17march" target="_blank" class="hover:text-white">Shubham Kumar</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
